@@ -29,10 +29,10 @@ Include the bcommon script inside your toplevel CMakeLists.txt
     if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
         # Include build common macros
-	message("INFO: Including CMake bcommon")
-	include("${CMAKE_CURRENT_SOURCE_DIR}/extern/cmake-helpers/bcommon.cmake")
+        message("INFO: Including CMake bcommon")
+        include("${CMAKE_CURRENT_SOURCE_DIR}/extern/cmake-helpers/bcommon.cmake")
 
-	# Add targets and libraries...
+        # Add targets and libraries...
 
     endif()
 
