@@ -1,8 +1,12 @@
+# Common build system macros and functions
+
+# Print high level info about a project
 macro(build_project_msg)
     message(STATUS "INFO: Building project ${PROJECT_NAME} from toplevel project ${CMAKE_PROJECT_NAME}")
 endmacro()
 
 
+# Create a new GoogleTest test executable
 macro(project_add_test TESTNAME FILES LIBRARIES)
     # Create the executable for the test
     add_executable(${TESTNAME} ${FILES})
